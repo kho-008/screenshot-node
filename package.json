@@ -1,0 +1,18 @@
+{
+  "name": "screenshot-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "one-file": "node -e \"import('./capture-website.mjs').then(mod => mod.oneFile('https://www.google.com/'))\"",
+    "multi-file": "node -e \"import('./capture-website.mjs').then(mod => mod.multiFile())\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "capture-website": "^3.2.0",
+    "date-fns": "^2.29.3",
+    "puppeteer": "^19.6.2"
+  }
+}
